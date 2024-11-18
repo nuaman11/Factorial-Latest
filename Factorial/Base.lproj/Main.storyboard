@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Factorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6j3-JG-AFl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTC-8c-Q3k">
+                                <rect key="frame" x="85.5" y="120" width="243.5" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Rde-xH-ESO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="FACTORIAL">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER NUM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZdQ-Kq-Vjb">
+                                <rect key="frame" x="107" y="236" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QJX-xO-3Li"/>
+                                    <constraint firstAttribute="height" constant="50" id="VCg-px-Y9g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coe-Ye-U40">
+                                <rect key="frame" x="154" y="475" width="106" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="qJn-Gp-fYL"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="RESULT">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m86-73-VU8">
+                                <rect key="frame" x="155.5" y="369" width="103" height="56"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="CLICK">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="37"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="btnFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpt-jt-6Ta"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WTC-8c-Q3k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="7hk-RU-Uww"/>
+                            <constraint firstItem="6j3-JG-AFl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MGU-1o-agf"/>
+                            <constraint firstItem="m86-73-VU8" firstAttribute="centerX" secondItem="WTC-8c-Q3k" secondAttribute="centerX" id="Wtj-r6-bAs"/>
+                            <constraint firstItem="m86-73-VU8" firstAttribute="top" secondItem="ZdQ-Kq-Vjb" secondAttribute="bottom" constant="83" id="XdF-Fk-gf9"/>
+                            <constraint firstItem="coe-Ye-U40" firstAttribute="centerX" secondItem="WTC-8c-Q3k" secondAttribute="centerX" id="ZPf-a3-sup"/>
+                            <constraint firstAttribute="bottom" secondItem="6j3-JG-AFl" secondAttribute="bottom" id="bvE-IX-R7A"/>
+                            <constraint firstItem="WTC-8c-Q3k" firstAttribute="centerX" secondItem="6j3-JG-AFl" secondAttribute="centerX" id="dWk-Xg-QV4"/>
+                            <constraint firstItem="6j3-JG-AFl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eOl-1S-8dy"/>
+                            <constraint firstItem="ZdQ-Kq-Vjb" firstAttribute="centerX" secondItem="WTC-8c-Q3k" secondAttribute="centerX" id="i7A-kI-Hlz"/>
+                            <constraint firstItem="coe-Ye-U40" firstAttribute="top" secondItem="m86-73-VU8" secondAttribute="bottom" constant="50" id="obd-Gp-RU8"/>
+                            <constraint firstItem="ZdQ-Kq-Vjb" firstAttribute="top" secondItem="WTC-8c-Q3k" secondAttribute="bottom" constant="62" id="vWd-Xu-Mx5"/>
+                            <constraint firstItem="6j3-JG-AFl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xZg-im-gEk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblResult" destination="coe-Ye-U40" id="pXa-H3-w7W"/>
+                        <outlet property="txtNum" destination="ZdQ-Kq-Vjb" id="Nf3-Em-ksa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BG7.jpg" width="480" height="853.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
